@@ -35,7 +35,7 @@ steps:
   - task: ArchiveFiles@2
     displayName: 'Zip Files for Deployment'
     inputs:
-      rootFolderOrFile: 'build'
+      rootFolderOrFile: 'dist'
       includeRootFolder: true
       archiveType: 'zip'
       archiveFile: '$(Build.ArtifactStagingDirectory)/build-$(Build.BuildId).zip'
